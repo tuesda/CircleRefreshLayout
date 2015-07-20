@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CirCleRefreshLayout"><attr format="color" name="AniBackColor"/><attr format="color" name="AniForeColor"/><attr format="integer" name="CircleSmaller"/></declare-styleable>
+    <!-- From: file:/Users/zhanglei/AndroidStudioProjects/CircleRefreshLayout/circlerefresh/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/zhanglei/AndroidStudioProjects/CircleRefreshLayout/circlerefresh/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">CircleRefresh</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/zhanglei/AndroidStudioProjects/CircleRefreshLayout/circlerefresh/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

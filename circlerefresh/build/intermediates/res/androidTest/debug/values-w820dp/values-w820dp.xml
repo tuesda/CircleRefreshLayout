@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/zhanglei/AndroidStudioProjects/CircleRefreshLayout/circlerefresh/build/intermediates/bundles/debug/res/values-w820dp/values-w820dp.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>
