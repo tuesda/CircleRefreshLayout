@@ -218,8 +218,8 @@ public class CircleRefreshLayout extends FrameLayout {
                         mUpBackAnimator.start();
                         mHeader.releaseDrag();
                         mIsRefreshing = true;
-                        if (onRefreshListener!=null) {
-                            onRefreshListener.refreshing();
+                        if (onCircleRefreshListener!=null) {
+                            onCircleRefreshListener.refreshing();
                         }
 
                     } else {
@@ -248,20 +248,20 @@ public class CircleRefreshLayout extends FrameLayout {
     }
 
     public void finishRefreshing() {
-        if (onRefreshListener != null) {
-            onRefreshListener.completeRefresh();
+        if (onCircleRefreshListener != null) {
+            onCircleRefreshListener.completeRefresh();
         }
         mIsRefreshing = false;
         mHeader.setRefreshing(false);
     }
 
-    private OnRefreshListener onRefreshListener;
+    private OnCircleRefreshListener onCircleRefreshListener;
 
-    public void setOnRefreshListener(OnRefreshListener onRefreshListener) {
-        this.onRefreshListener = onRefreshListener;
+    public void setOnRefreshListener(OnCircleRefreshListener onCircleRefreshListener) {
+        this.onCircleRefreshListener = onCircleRefreshListener;
     }
 
-    interface OnRefreshListener {
+    public interface OnCircleRefreshListener {
         void completeRefresh();
 
         void refreshing();

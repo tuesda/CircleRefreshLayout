@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.tuesda.walker.circlerefresh.CircleRefreshLayout;
 
@@ -53,6 +54,19 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 mRefreshLayout.finishRefreshing();
+            }
+        });
+
+        mRefreshLayout.setOnRefreshListener(
+                new CircleRefreshLayout.OnCircleRefreshListener() {
+            @Override
+            public void refreshing() {
+                // do something when refresh starts
+            }
+
+            @Override
+            public void completeRefresh() {
+                // do something when refresh complete
             }
         });
 
